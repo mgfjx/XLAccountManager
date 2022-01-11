@@ -7,7 +7,7 @@
 
 ## Example
 
-[img](./imgs/img.png)
+![img](./imgs/img.png)
 
 ## Requirements
 
