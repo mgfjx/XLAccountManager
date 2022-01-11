@@ -7,6 +7,8 @@
 //
 
 #import "XLViewController.h"
+//#import <XLAccountManager.h>
+#import <XLAccountManager/XLAccountManager.h>
 
 @interface XLViewController ()
 
@@ -20,10 +22,14 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)showAccounts:(UIButton *)sender {
+    
+    XLAccountListController *vc = [[XLAccountListController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+    vc.selectedAccountCallback = ^(NSString * _Nonnull account, NSString * _Nonnull password) {
+        NSLog(@"account: %@, password: %@", account, password);
+    };
+    
 }
 
 @end

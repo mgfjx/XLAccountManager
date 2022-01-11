@@ -1,0 +1,6 @@
+framework module Pods_XLAccountManager_Example {
+  umbrella header "Pods-XLAccountManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module XLAccountManager {
+  umbrella header "XLAccountManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
