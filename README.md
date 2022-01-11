@@ -7,7 +7,7 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+[img](./imgs/img.png)
 
 ## Requirements
 
@@ -20,9 +20,18 @@ it, simply add the following line to your Podfile:
 pod 'XLAccountManager'
 ```
 
+```Objective-C
+#import <XLAccountManager/XLAccountManager.h>
+XLAccountListController *vc = [[XLAccountListController alloc] init];
+[self presentViewController:vc animated:YES completion:nil];
+vc.selectedAccountCallback = ^(NSString * _Nonnull account, NSString * _Nonnull password) {
+    NSLog(@"account: %@, password: %@", account, password);
+};
+```
+
 ## Author
 
-xxl, xiexiaolong.xxl@alibaba-inc.com
+mgfjx
 
 ## License
 
