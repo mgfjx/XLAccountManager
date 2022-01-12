@@ -10,6 +10,7 @@
 #import "XLAccountListCell.h"
 #import "XLArchiveObj.h"
 #import "UIView+xllayout.h"
+#import "UIImage+XLAccountImage.h"
 
 /* ------------------------------------------------ */
 //创建测试账号对象
@@ -60,12 +61,12 @@
 
 - (void)addAccount {
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"賬號信息" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Account Information" message:@"" preferredStyle:UIAlertControllerStyleAlert];
     //增加确定按钮；
-    [alertController addAction:[UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        UITextField *userNameTextField = alertController.textFields.firstObject;
-        UITextField *passwordTextField = [alertController.textFields objectAtIndex:1];
-        UITextField *descTextField = alertController.textFields.lastObject;
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Confirm" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *descTextField = alertController.textFields.firstObject;
+        UITextField *userNameTextField = [alertController.textFields objectAtIndex:1];
+        UITextField *passwordTextField = alertController.textFields.lastObject;
         NSString *account = userNameTextField.text;
         NSString *password = passwordTextField.text;
         NSString *desc = descTextField.text;
@@ -77,16 +78,16 @@
     }]];
     
     //增加取消按钮；
-    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
     
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"請輸入賬號";
+        textField.placeholder = @"Account Description";
     }];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"請輸入密碼";
+        textField.placeholder = @"Account";
     }];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"請輸入賬號描述";
+        textField.placeholder = @"Password";
     }];
     
     [self presentViewController:alertController animated:true completion:nil];
@@ -105,6 +106,16 @@
         bgView.heightAnchor.equalToValue(44),
     ]];
     
+    UIView *line = [[UIView alloc] init];
+    line.backgroundColor = [UIColor colorWithRed:0.949 green:0.949 blue:0.969 alpha:1.000];
+    [bgView addSubview:line];
+    [line activateConstraints:@[
+        line.heightAnchor.equalToValue(1),
+        line.leftAnchor.equalTo(bgView.leftAnchor).offset(0),
+        line.rightAnchor.equalTo(bgView.rightAnchor).offset(0),
+        line.bottomAnchor.equalTo(bgView.bottomAnchor).offset(0),
+    ]];
+    
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.textColor = [UIColor blackColor];
     titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
@@ -119,10 +130,11 @@
     ]];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"Add" forState:UIControlStateNormal];
-    btn.titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
-    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+//    [btn setTitle:@"Add" forState:UIControlStateNormal];
+//    btn.titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
+//    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+//    [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+    [btn setImage:[UIImage am_imageNamed:@"add"] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(addAccount) forControlEvents:UIControlEventTouchUpInside];
     [bgView addSubview:btn];
     [btn sizeToFit];
@@ -131,14 +143,14 @@
         btn.rightAnchor.equalTo(bgView.rightAnchor).offset(-10),
     ]];
     
-    UITableView *table = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    UITableView *table = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     table.delegate = self;
     table.dataSource = self;
     [table registerNib:[UINib nibWithNibName:NSStringFromClass([XLAccountListCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([XLAccountListCell class])];
     [table registerClass:[XLAccountListCell class]forCellReuseIdentifier:NSStringFromClass([XLAccountListCell class])];
     [self.view addSubview:table];
     table.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    table.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
+    table.backgroundColor = [UIColor colorWithRed:0.949 green:0.949 blue:0.969 alpha:1.000];
     self.tableView = table;
     
     [table activateConstraints:@[
@@ -185,11 +197,11 @@
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return self.dataArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -197,22 +209,22 @@
     XLAccountListCell *cell = (XLAccountListCell *)[tableView dequeueReusableCellWithIdentifier:cellReuse];
     
     if (indexPath.row % 2 == 0) {
-        cell.backgroundColor = [UIColor colorWithRed:0.980 green:0.980 blue:0.980 alpha:1.000];
+//        cell.backgroundColor = [UIColor colorWithRed:0.980 green:0.980 blue:0.980 alpha:1.000];
     } else {
-        cell.backgroundColor = [UIColor whiteColor];
+//        cell.backgroundColor = [UIColor whiteColor];
     }
     
-    AccountObj *obj = self.dataArray[indexPath.row];
+    AccountObj *obj = self.dataArray[indexPath.section];
     cell.titleLabel.text = obj.desc;
-    cell.accountLabel.text = [NSString stringWithFormat:@"Account: %@", obj.account];
-    cell.passwordLabel.text = [NSString stringWithFormat:@"Password: %@", obj.password];
+    cell.accountLabel.text = obj.account;
+    cell.passwordLabel.text = obj.password;
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    AccountObj *obj = self.dataArray[indexPath.row];
+    AccountObj *obj = self.dataArray[indexPath.section];
     if (self.selectedAccountCallback) {
         self.selectedAccountCallback(obj.account, obj.password);
     }
@@ -221,6 +233,22 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 15;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.001;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return [UIView new];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return [UIView new];
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XLAccountManager'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '用于测试app时的账号管理.'
 
 # This description is used to generate tags and improve search results.
@@ -32,6 +32,11 @@ Pod::Spec.new do |s|
 
   s.source_files = 'XLAccountManager/Classes/**/*'
   
+  s.subspec 'Assets' do |imgs|
+    imgs.resource_bundles = {
+      'XLAccountManager' => ['XLAccountManager/Assets/*.png']
+    }
+  end
   # s.resource_bundles = {
   #   'XLAccountManager' => ['XLAccountManager/Assets/*.png']
   # }

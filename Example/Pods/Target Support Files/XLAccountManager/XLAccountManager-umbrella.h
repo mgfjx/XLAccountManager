@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIImage+XLAccountImage.h"
 #import "UIView+xllayout.h"
 #import "XLAccountListCell.h"
 #import "XLAccountListController.h"

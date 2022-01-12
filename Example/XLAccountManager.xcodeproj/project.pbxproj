@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14ED601087AE96E5E07B24BD /* XLAccountManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XLAccountManager.podspec; path = ../XLAccountManager.podspec; sourceTree = "<group>"; };
+		14ED601087AE96E5E07B24BD /* XLAccountManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XLAccountManager.podspec; path = ../XLAccountManager.podspec; sourceTree = "<group>"; };
 		34C5475596AEF32593789AAF /* Pods-XLAccountManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLAccountManager_Example.release.xcconfig"; path = "Target Support Files/Pods-XLAccountManager_Example/Pods-XLAccountManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3A9BE4BE4359BE48C5541705 /* Pods-XLAccountManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLAccountManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-XLAccountManager_Example/Pods-XLAccountManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XLAccountManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLAccountManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +62,8 @@
 		61A7087828DB94AEE8F7B310 /* Pods-XLAccountManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLAccountManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-XLAccountManager_Tests/Pods-XLAccountManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		89E35D80343D1F46EC9FDAD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8AC1EAE684A04B3F5B6C2E8F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		89E35D80343D1F46EC9FDAD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8AC1EAE684A04B3F5B6C2E8F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8FB6E9ADB362C7DCD60F4841 /* Pods_XLAccountManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLAccountManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDC8E18014DDCFF4F0B5774 /* Pods-XLAccountManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLAccountManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XLAccountManager_Tests/Pods-XLAccountManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6DBCC1215B3AF800F545C9A /* Pods_XLAccountManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLAccountManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				AEDC8E18014DDCFF4F0B5774 /* Pods-XLAccountManager_Tests.debug.xcconfig */,
 				61A7087828DB94AEE8F7B310 /* Pods-XLAccountManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = xxl;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = BGX983T347;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -513,11 +516,12 @@
 			baseConfigurationReference = 3A9BE4BE4359BE48C5541705 /* Pods-XLAccountManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BGX983T347;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XLAccountManager/XLAccountManager-Prefix.pch";
 				INFOPLIST_FILE = "XLAccountManager/XLAccountManager-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.XLAccountManager-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -529,11 +533,12 @@
 			baseConfigurationReference = 34C5475596AEF32593789AAF /* Pods-XLAccountManager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BGX983T347;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XLAccountManager/XLAccountManager-Prefix.pch";
 				INFOPLIST_FILE = "XLAccountManager/XLAccountManager-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.XLAccountManager-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
