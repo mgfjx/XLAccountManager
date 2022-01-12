@@ -63,39 +63,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)addAccount {
-    
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Account Information" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-    //增加确定按钮；
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Confirm" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        UITextField *descTextField = alertController.textFields.firstObject;
-        UITextField *userNameTextField = [alertController.textFields objectAtIndex:1];
-        UITextField *passwordTextField = alertController.textFields.lastObject;
-        NSString *account = userNameTextField.text;
-        NSString *password = passwordTextField.text;
-        NSString *desc = descTextField.text;
-        if (account.length == 0 || password.length == 0 || desc.length == 0) {
-//            [PublicDialogManager showText:@"賬號、密碼、描述都不能為空" inView:self.view duration:1];
-        } else {
-            [self addAndSaveAccount:account password:password desc:desc];
-        }
-    }]];
-    
-    //增加取消按钮；
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
-    
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"Account Description";
-    }];
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"Account";
-    }];
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"Password";
-    }];
-    
-    [self presentViewController:alertController animated:true completion:nil];
-    
+- (void)addBtnClicked {
+    [self addAccount:nil indexPath:nil];
 }
 
 - (void)initViews {
@@ -135,7 +104,7 @@
     
     UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [addBtn setImage:[UIImage am_imageNamed:@"add"] forState:UIControlStateNormal];
-    [addBtn addTarget:self action:@selector(addAccount) forControlEvents:UIControlEventTouchUpInside];
+    [addBtn addTarget:self action:@selector(addBtnClicked) forControlEvents:UIControlEventTouchUpInside];
     [bgView addSubview:addBtn];
     [addBtn sizeToFit];
     [addBtn activateConstraints:@[
@@ -177,9 +146,15 @@
     ];
 }
 
-- (void)addAndSaveAccount:(NSString *)account password:(NSString *)password desc:(NSString *)desc {
-    AccountObj *obj = [AccountObj account:account password:password desc:desc];
-    [self.dataArray addObject:obj];
+- (void)addAndSaveAccount:(NSString *)account password:(NSString *)password desc:(NSString *)desc account:(AccountObj *)obj indexPath:(NSIndexPath *)indexPath {
+    if (obj || indexPath) {
+        obj.desc = desc;
+        obj.account = account;
+        obj.password = password;
+    } else {
+        AccountObj *obj = [AccountObj account:account password:password desc:desc];
+        [self.dataArray addObject:obj];
+    }
     [self.tableView reloadData];
     [self saveDataToLocal];
 }
@@ -205,6 +180,50 @@
     return dataArray;
 }
 
+- (void)addAccount:(AccountObj *)obj indexPath:(NSIndexPath *)indexPath {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Account Information" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    //增加确定按钮；
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Confirm" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *descTextField = alertController.textFields.firstObject;
+        UITextField *userNameTextField = [alertController.textFields objectAtIndex:1];
+        UITextField *passwordTextField = alertController.textFields.lastObject;
+        NSString *account = userNameTextField.text;
+        NSString *password = passwordTextField.text;
+        NSString *desc = descTextField.text;
+        if (account.length == 0 || password.length == 0 || desc.length == 0) {
+//            [PublicDialogManager showText:@"賬號、密碼、描述都不能為空" inView:self.view duration:1];
+        } else {
+            [self addAndSaveAccount:account password:password desc:desc account:obj indexPath:indexPath];
+        }
+    }]];
+    
+    //增加取消按钮；
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+    
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"Account Description";
+        if (obj) {
+            textField.text = obj.desc;
+        }
+    }];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"Account";
+        if (obj) {
+            textField.text = obj.account;
+        }
+    }];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"Password";
+        if (obj) {
+            textField.text = obj.password;
+        }
+    }];
+    
+    [self presentViewController:alertController animated:true completion:nil];
+    
+}
+
 #pragma mark - UITableViewDelegate, UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.dataArray.count;
@@ -218,16 +237,15 @@
     NSString *cellReuse = NSStringFromClass([XLAccountListCell class]);
     XLAccountListCell *cell = (XLAccountListCell *)[tableView dequeueReusableCellWithIdentifier:cellReuse];
     
-    if (indexPath.row % 2 == 0) {
-//        cell.backgroundColor = [UIColor colorWithRed:0.980 green:0.980 blue:0.980 alpha:1.000];
-    } else {
-//        cell.backgroundColor = [UIColor whiteColor];
-    }
-    
     AccountObj *obj = self.dataArray[indexPath.section];
     cell.titleLabel.text = obj.desc;
     cell.accountLabel.text = obj.account;
     cell.passwordLabel.text = obj.password;
+    
+    __weak __typeof(&*self) weakSelf  = self;
+    cell.editCallback = ^{
+        [weakSelf addAccount:obj indexPath:indexPath];
+    };
     
     return cell;
 }

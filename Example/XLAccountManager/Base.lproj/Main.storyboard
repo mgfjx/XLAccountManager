@@ -29,17 +29,29 @@
                                     <action selector="showAccounts:" destination="whP-gf-Uak" eventType="touchUpInside" id="qIV-l9-93L"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flU-XW-ka4">
+                                <rect key="frame" x="36" y="288" width="303" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="9ps-5q-iAA" firstAttribute="top" secondItem="flU-XW-ka4" secondAttribute="bottom" constant="30" id="07G-ov-KVZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="flU-XW-ka4" secondAttribute="trailing" constant="20" id="CLy-0O-Esm"/>
                             <constraint firstItem="9ps-5q-iAA" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="emo-rA-uJI"/>
                             <constraint firstItem="9ps-5q-iAA" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="jSQ-vS-sn2"/>
+                            <constraint firstItem="flU-XW-ka4" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="20" id="ja0-QA-O6N"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="flU-XW-ka4" id="yjj-xM-thO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="-28" y="445"/>
         </scene>
     </scenes>
     <resources>

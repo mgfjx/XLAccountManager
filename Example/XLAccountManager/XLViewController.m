@@ -12,6 +12,8 @@
 
 @interface XLViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+
 @end
 
 @implementation XLViewController
@@ -26,8 +28,10 @@
     
     XLAccountListController *vc = [[XLAccountListController alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
+    __weak __typeof(&*self) weakSelf = self;
     vc.selectedAccountCallback = ^(NSString * _Nonnull account, NSString * _Nonnull password) {
         NSLog(@"account: %@, password: %@", account, password);
+        weakSelf.textLabel.text = [NSString stringWithFormat:@"account: %@\n password: %@", account, password];
     };
     
 }

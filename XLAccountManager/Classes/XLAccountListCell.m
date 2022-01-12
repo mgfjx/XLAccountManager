@@ -34,6 +34,18 @@
         titleLabel.leftAnchor.equalTo(bgView.leftAnchor).offset(18),
     ]];
     
+    UIButton *editBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [editBtn setImage:[UIImage am_imageNamed:@"edit"] forState:UIControlStateNormal];
+    [editBtn addTarget:self action:@selector(editBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+    [bgView addSubview:editBtn];
+    [editBtn sizeToFit];
+    [editBtn activateConstraints:@[
+        editBtn.centerYAnchor.equalTo(bgView.centerYAnchor),
+        editBtn.rightAnchor.equalTo(bgView.rightAnchor).offset(-20),
+        editBtn.widthAnchor.equalToValue(25),
+        editBtn.heightAnchor.equalTo(editBtn.widthAnchor),
+    ]];
+    
     __weak __typeof(&*self) weakSelf  = self;
     UIView *accountView = [self createImgLabelView:@"account" callback:^(UILabel *label) {
         weakSelf.accountLabel = label;
@@ -42,7 +54,7 @@
     [accountView activateConstraints:@[
         accountView.topAnchor.equalTo(titleLabel.bottomAnchor).offset(5),
         accountView.leftAnchor.equalTo(titleLabel.leftAnchor),
-        accountView.rightAnchor.equalTo(bgView.rightAnchor).offset(-5),
+        accountView.rightAnchor.equalTo(editBtn.leftAnchor).offset(-5),
         accountView.heightAnchor.equalToValue(18),
     ]];
     
@@ -53,18 +65,8 @@
     [passwordView activateConstraints:@[
         passwordView.topAnchor.equalTo(accountView.bottomAnchor).offset(5),
         passwordView.leftAnchor.equalTo(accountView.leftAnchor),
-        passwordView.rightAnchor.equalTo(bgView.rightAnchor).offset(-5),
+        passwordView.rightAnchor.equalTo(editBtn.leftAnchor).offset(-5),
         passwordView.heightAnchor.equalToValue(18),
-    ]];
-    
-    UIView *line = [[UIView alloc] init];
-//    line.backgroundColor = [UIColor colorWithRed:0.882 green:0.882 blue:0.882 alpha:1.000];
-    [bgView addSubview:line];
-    [line activateConstraints:@[
-        line.heightAnchor.equalToValue(0.5),
-        line.leftAnchor.equalTo(bgView.leftAnchor).offset(0),
-        line.rightAnchor.equalTo(bgView.rightAnchor).offset(0),
-        line.bottomAnchor.equalTo(bgView.bottomAnchor).offset(0),
     ]];
     
 }
@@ -96,6 +98,12 @@
     callback(label);
     
     return bgView;
+}
+
+- (void)editBtnClicked {
+    if (self.editCallback) {
+        self.editCallback();
+    }
 }
 
 @end
