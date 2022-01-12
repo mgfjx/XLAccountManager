@@ -235,10 +235,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     AccountObj *obj = self.dataArray[indexPath.section];
-    if (self.selectedAccountCallback) {
-        self.selectedAccountCallback(obj.account, obj.password);
-    }
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+        if (self.selectedAccountCallback) {
+            self.selectedAccountCallback(obj.account, obj.password);
+        }
+    }];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
