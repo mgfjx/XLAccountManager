@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0574E41FF5C769FA43C08552240ED875 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 51834EC5092EB435950347D2439B6E12 /* close.png */; };
 		07192337FF983832415917EB63209472 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		167F18C1F6CAD4E802DFCCDD2F7D1B26 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E9A56A7C4BC6D5622C463B67718DCFF /* add@2x.png */; };
 		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21A18CD4767A2D22DB08D28BB6734061 /* XLArchiveObj.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC14E8E297CA2B44F8DD38CFE536CA7 /* XLArchiveObj.m */; };
-		2543126ADF2347E507FEA79CDC7BF873 /* XLArchiveObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CBA530B65741C13C4C122F04EE8063B /* XLArchiveObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21A18CD4767A2D22DB08D28BB6734061 /* XLArchiveObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6FF4CA3A9EAC3B2B286C8FA6369755 /* XLArchiveObj.m */; };
+		2543126ADF2347E507FEA79CDC7BF873 /* XLArchiveObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D6A93C22C829F517D4F47283BD364B /* XLArchiveObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27CB313CE71DC63650AC327F9CCE8734 /* add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20C7F3835702DD59E42C810E1EE89703 /* add@3x.png */; };
 		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
 		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
@@ -20,129 +23,133 @@
 		450240CE8C5013C1FFD68F5442BB6CC9 /* Pods-XLAccountManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AAF35CA6367365EA304462D41ABF0E /* Pods-XLAccountManager_Example-dummy.m */; };
 		4CAFCA3A454B2E9F6D42E83E6C070E0A /* Pods-XLAccountManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE10E76FD5BE503465CEEA8CCC73C44 /* Pods-XLAccountManager_Tests-dummy.m */; };
 		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5BA48BA4B303DE65C0E722F3D2A7ED79 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 001A88F66543AA62CA186FD0A407E772 /* add.png */; };
 		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
-		5F171B0563D9B9D1277767A85CE93512 /* UIImage+XLAccountImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BE853AEB14A16516B730D6037734260F /* UIImage+XLAccountImage.m */; };
+		5F171B0563D9B9D1277767A85CE93512 /* UIImage+XLAccountImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD24E5EEA0359118212CB3B854F7941 /* UIImage+XLAccountImage.m */; };
+		62E6CAD14C04EB579028D2F5112ECB92 /* password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F03916DAB6430A9FF195E677203E27 /* password@3x.png */; };
 		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65ABC64A964859FD1634247800A9247C /* UIView+xllayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8846186438A3CB38588B07AD51B9D9 /* UIView+xllayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65ABC64A964859FD1634247800A9247C /* UIView+xllayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B1957597EAF8E22E2E9EA105BBBA1365 /* UIView+xllayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6B588827941BC1B855A80EED9FC78574 /* XLAccountListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 309D1F8625601346887535EE970E616A /* XLAccountListCell.m */; };
-		6F294C655E834166F9C7E376606A1231 /* XLAccountListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D607A05B0F8BCF226DC60CB04F2E6C /* XLAccountListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70052BF77C89F87FF4570A3690C11356 /* add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA68EA8E522E34751A7CC3B5E6A55082 /* add@3x.png */; };
+		6B588827941BC1B855A80EED9FC78574 /* XLAccountListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6825513FE4F8C7DA74B00AFA395732 /* XLAccountListCell.m */; };
+		6F294C655E834166F9C7E376606A1231 /* XLAccountListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AA73D2D11C99EEF64BA9DD8C8426068B /* XLAccountListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
-		7495DE9E763E2D27658589B0EB7AB435 /* XLAccountListController.h in Headers */ = {isa = PBXBuildFile; fileRef = D07CF9BB59FF808E32A2FDA9DDAEFC2C /* XLAccountListController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7858D80A430E9D91FEF6E8A2F9C939EA /* password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 110DF155DAA87D0CF136B8F9D4D6B608 /* password@2x.png */; };
+		7495DE9E763E2D27658589B0EB7AB435 /* XLAccountListController.h in Headers */ = {isa = PBXBuildFile; fileRef = AC53C0D1C7688F38E79BE6CF3BFD9545 /* XLAccountListController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
-		7F50DD8096BF317DFFA1B5C6CAA551FE /* UIImage+XLAccountImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D68F363395C113098D600A4BD805A5 /* UIImage+XLAccountImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8143FAAD442DC4DB3E195947CA7C70AF /* account.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA9880E72921597765EC0437E944908 /* account.png */; };
+		7F50DD8096BF317DFFA1B5C6CAA551FE /* UIImage+XLAccountImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 69CA4D85184408F728D27E6F8568479B /* UIImage+XLAccountImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F578B578EFD3E35BE6EBE0161D9B8C7 /* account@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0AF237131E68809EC8390D33F799549 /* account@3x.png */; };
+		83A2AC3A204C820D473221BB2B1DB8D0 /* password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F652C34771EB5C463149A6227EE9FEF /* password@2x.png */; };
 		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9458672F65315C597303E3290953BDF0 /* XLAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A176A19BB0BC6EF75C67C2244D336A3 /* XLAccountManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9458672F65315C597303E3290953BDF0 /* XLAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8585343AF49D1E0B033B2DFB8E56D9B6 /* XLAccountManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
 		A4838A92A136E4BFA178BCAB7BF04E2D /* Pods-XLAccountManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E07167A74290DDE3BB788EE5D264B41 /* Pods-XLAccountManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6CFB717AA235BD140E119045DF50BC8 /* password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A89706A49CD8B7549BA63F97FF3B1FE /* password@3x.png */; };
-		AF5C281D155A0BF847119D9C83239D4E /* XLAccountManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 792DDA98039FED822C59B178EEB4F85A /* XLAccountManager-dummy.m */; };
+		AF5C281D155A0BF847119D9C83239D4E /* XLAccountManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC9A81B73B39A1209F72BC7BD18525F /* XLAccountManager-dummy.m */; };
+		B0B1C2B161998B5827DB4522573E7488 /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8956CAEB38B07BF5BF06B8AE9F6C84A8 /* close@3x.png */; };
+		B1A01139409888DAE8D987D534255DDF /* account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 585018C664626BD4DB01186AB55B1223 /* account@2x.png */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
-		BB42584B96CAB04C18C5FBDABAB5084D /* XLAccountListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AAB9B5B68008F74F010B1D06CCE3A6 /* XLAccountListController.m */; };
+		B58FF4A7568F23D9F368455A506F4213 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 90375597C68751C546C2F33E2D4062F2 /* add.png */; };
+		B6954C2FC5A87509479FDDFCCAA7C363 /* account.png in Resources */ = {isa = PBXBuildFile; fileRef = 829B29F4AABDBDA72676E22518BD0A40 /* account.png */; };
+		BB42584B96CAB04C18C5FBDABAB5084D /* XLAccountListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E80B10AA0FFCC06FC0B9BDE14657599 /* XLAccountListController.m */; };
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		CB66B154C5A45E1143F87E5974CEEFD0 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6EC94AD4EC8794DF6EEF55DDC58254 /* add@2x.png */; };
 		CDC729A6CE9195E60E77101EEEB2B431 /* Pods-XLAccountManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91845DDD63318665CF1B56C6DE13D6E1 /* Pods-XLAccountManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4F53CB3123E774458796DABA9B0A85A /* account@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FCA2FFE9B4C3B89019F1300829558C /* account@3x.png */; };
-		DD528CC49340471EF42AD3DEDF7BD9C7 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D186F29E479D250DD375B86DD24269 /* password.png */; };
+		E0DA8EB8EA9D92C3FA5D45507D820D0B /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0D7390410E2B0549383A83793BD775 /* password.png */; };
 		E744CA585BFA77A915B6B97A1490D3CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		EB9E9DD72F8834C8D3368A9F3D40A67C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		F2350C4112D8346656527E4A2F709AC8 /* account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA21D8B85F7A0C8FEA025D942EC4CDC0 /* account@2x.png */; };
 		FA9DB9E715F3EF380B7BF127EA6688B9 /* XLAccountManager-XLAccountManager in Resources */ = {isa = PBXBuildFile; fileRef = 98045C872CC0AD5FC44B2FE8549537A6 /* XLAccountManager-XLAccountManager */; };
-		FCDC7B410970A7691D3B96D2F12D61F2 /* XLAccountManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C43F8A75FF82E116C378E8D0A8CD43C2 /* XLAccountManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCDC7B410970A7691D3B96D2F12D61F2 /* XLAccountManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FCD51807A47945E572485916C3A1F9 /* XLAccountManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6D5280FFA4BB1FCC2078B503063C6F /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A0AF5D52EE881C465F4C8DFA166FD2 /* close@2x.png */; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFAF2D5D60ED351A567EEB6C9C115F0D /* UIView+xllayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FF88653D17A65A3ADE2BBBD3326A11FF /* UIView+xllayout.m */; };
+		FFAF2D5D60ED351A567EEB6C9C115F0D /* UIView+xllayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAF8467EACEBF9C5EB6CABFAFD031BD /* UIView+xllayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5861FC7E2DB6EB71FFB868C06CD56C8B /* PBXContainerItemProxy */ = {
+		17C7ED2BAB35D3272D5401A16543A4A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 49A061205DC70CCD496959D49B145F61;
 			remoteInfo = "XLAccountManager-XLAccountManager";
 		};
-		9F2C6B55C2BF03EDF1889540BFD6DCAE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7DE88BE25F919A217EA51B69776D2E63;
-			remoteInfo = "Pods-XLAccountManager_Example";
-		};
-		C57607151D97B80E1BA4F3AC4D5DA969 /* PBXContainerItemProxy */ = {
+		81915554BD4B8EFEB9CC877D8A1F4E92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
-		EAB7CC01F7897DB882F36B44C9A11750 /* PBXContainerItemProxy */ = {
+		8D24FCB527046825DF9100A60BF75D5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C471617A5D9DC0E257A2F2863697C88D;
 			remoteInfo = XLAccountManager;
 		};
+		CBD86247E230C063A2DE86322A385C2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DE88BE25F919A217EA51B69776D2E63;
+			remoteInfo = "Pods-XLAccountManager_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001A88F66543AA62CA186FD0A407E772 /* add.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = add.png; path = XLAccountManager/Assets/add.png; sourceTree = "<group>"; };
 		0C96C2F5010481823F26F330CE246AC7 /* Pods-XLAccountManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XLAccountManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		110DF155DAA87D0CF136B8F9D4D6B608 /* password@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "password@2x.png"; path = "XLAccountManager/Assets/password@2x.png"; sourceTree = "<group>"; };
 		11A219183302A559601716711DADD68B /* Pods-XLAccountManager_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XLAccountManager_Example"; path = Pods_XLAccountManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A0AF5D52EE881C465F4C8DFA166FD2 /* close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "close@2x.png"; path = "XLAccountManager/Assets/close@2x.png"; sourceTree = "<group>"; };
+		189BA905183613DE0BA98FC63A3902DF /* XLAccountManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLAccountManager-prefix.pch"; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1B676357B08AF41975AAF9318F1DEB9F /* Pods-XLAccountManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XLAccountManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		1CBA530B65741C13C4C122F04EE8063B /* XLArchiveObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLArchiveObj.h; path = XLAccountManager/Classes/XLArchiveObj.h; sourceTree = "<group>"; };
-		1D74755356A85FD286B7CB1474B77836 /* XLAccountManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLAccountManager.release.xcconfig; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1DF856F8431BA7C917B4489F9FCA236C /* Pods-XLAccountManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XLAccountManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		22D607A05B0F8BCF226DC60CB04F2E6C /* XLAccountListCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLAccountListCell.h; path = XLAccountManager/Classes/XLAccountListCell.h; sourceTree = "<group>"; };
+		20C7F3835702DD59E42C810E1EE89703 /* add@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add@3x.png"; path = "XLAccountManager/Assets/add@3x.png"; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		309D1F8625601346887535EE970E616A /* XLAccountListCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLAccountListCell.m; path = XLAccountManager/Classes/XLAccountListCell.m; sourceTree = "<group>"; };
+		2BD24E5EEA0359118212CB3B854F7941 /* UIImage+XLAccountImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+XLAccountImage.m"; path = "XLAccountManager/Classes/UIImage+XLAccountImage.m"; sourceTree = "<group>"; };
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		37E5F834F956F88DC0CBAE087F6C2861 /* Pods-XLAccountManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XLAccountManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3A176A19BB0BC6EF75C67C2244D336A3 /* XLAccountManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLAccountManager.h; path = XLAccountManager/Classes/XLAccountManager.h; sourceTree = "<group>"; };
 		3EC0CE86C0C35E6CDCAA67076D64314C /* Pods-XLAccountManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XLAccountManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		3F652C34771EB5C463149A6227EE9FEF /* password@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "password@2x.png"; path = "XLAccountManager/Assets/password@2x.png"; sourceTree = "<group>"; };
 		43857E291ABF4592B336702D0C5BEE0B /* Pods-XLAccountManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XLAccountManager_Example-Info.plist"; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		48BA833464A77ACA91DCB3DF3714AEF0 /* Pods-XLAccountManager_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XLAccountManager_Tests"; path = Pods_XLAccountManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AA9880E72921597765EC0437E944908 /* account.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = account.png; path = XLAccountManager/Assets/account.png; sourceTree = "<group>"; };
-		4B8846186438A3CB38588B07AD51B9D9 /* UIView+xllayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+xllayout.h"; path = "XLAccountManager/Classes/UIView+xllayout.h"; sourceTree = "<group>"; };
+		48D6A93C22C829F517D4F47283BD364B /* XLArchiveObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLArchiveObj.h; path = XLAccountManager/Classes/XLArchiveObj.h; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		4C6EC94AD4EC8794DF6EEF55DDC58254 /* add@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add@2x.png"; path = "XLAccountManager/Assets/add@2x.png"; sourceTree = "<group>"; };
-		52D186F29E479D250DD375B86DD24269 /* password.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = password.png; path = XLAccountManager/Assets/password.png; sourceTree = "<group>"; };
+		51834EC5092EB435950347D2439B6E12 /* close.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = close.png; path = XLAccountManager/Assets/close.png; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		59FAB3542FCE179A0D0F6F90701A04AD /* XLAccountManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XLAccountManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5A89706A49CD8B7549BA63F97FF3B1FE /* password@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "password@3x.png"; path = "XLAccountManager/Assets/password@3x.png"; sourceTree = "<group>"; };
+		585018C664626BD4DB01186AB55B1223 /* account@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "account@2x.png"; path = "XLAccountManager/Assets/account@2x.png"; sourceTree = "<group>"; };
+		5A47FF38DF3D4BBAA25C2371D8CABB6D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E5C7E51682CF138DA39E425E9129AFB /* XLAccountManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLAccountManager.debug.xcconfig; sourceTree = "<group>"; };
+		5E6825513FE4F8C7DA74B00AFA395732 /* XLAccountListCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLAccountListCell.m; path = XLAccountManager/Classes/XLAccountListCell.m; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		69CA4D85184408F728D27E6F8568479B /* UIImage+XLAccountImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+XLAccountImage.h"; path = "XLAccountManager/Classes/UIImage+XLAccountImage.h"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		6C246E17018EB48B7E280B0C153EDA76 /* Pods-XLAccountManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XLAccountManager_Example.modulemap"; sourceTree = "<group>"; };
 		6D5BF740BED2AA344CB41D8B8A8FE12B /* Pods-XLAccountManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XLAccountManager_Tests-Info.plist"; sourceTree = "<group>"; };
+		6D6FF4CA3A9EAC3B2B286C8FA6369755 /* XLArchiveObj.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLArchiveObj.m; path = XLAccountManager/Classes/XLArchiveObj.m; sourceTree = "<group>"; };
 		6DE10E76FD5BE503465CEEA8CCC73C44 /* Pods-XLAccountManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XLAccountManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		6E07167A74290DDE3BB788EE5D264B41 /* Pods-XLAccountManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XLAccountManager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		75B75DCC4372562658DB0A7EF76D4581 /* XLAccountManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XLAccountManager-Info.plist"; sourceTree = "<group>"; };
 		76B9EF65EDC16993FA88437B5D7F79F3 /* Pods-XLAccountManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XLAccountManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		78FA3B6ADF36C288BC9B23253D237BF3 /* ResourceBundle-XLAccountManager-XLAccountManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLAccountManager-XLAccountManager-Info.plist"; sourceTree = "<group>"; };
-		792DDA98039FED822C59B178EEB4F85A /* XLAccountManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLAccountManager-dummy.m"; sourceTree = "<group>"; };
-		79FCA2FFE9B4C3B89019F1300829558C /* account@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "account@3x.png"; path = "XLAccountManager/Assets/account@3x.png"; sourceTree = "<group>"; };
+		7C0D7390410E2B0549383A83793BD775 /* password.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = password.png; path = XLAccountManager/Assets/password.png; sourceTree = "<group>"; };
+		7DC9A81B73B39A1209F72BC7BD18525F /* XLAccountManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLAccountManager-dummy.m"; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		7E80B10AA0FFCC06FC0B9BDE14657599 /* XLAccountListController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLAccountListController.m; path = XLAccountManager/Classes/XLAccountListController.m; sourceTree = "<group>"; };
 		80E42FC17B0FC81E05133A7941243CD3 /* Pods-XLAccountManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XLAccountManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		821C748622720AB8EA06ED0FA6112C72 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		829B29F4AABDBDA72676E22518BD0A40 /* account.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = account.png; path = XLAccountManager/Assets/account.png; sourceTree = "<group>"; };
 		84AAF35CA6367365EA304462D41ABF0E /* Pods-XLAccountManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XLAccountManager_Example-dummy.m"; sourceTree = "<group>"; };
+		84BF0F5A170B3F73BBF7879CD1B12A5C /* XLAccountManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLAccountManager.debug.xcconfig; sourceTree = "<group>"; };
+		8585343AF49D1E0B033B2DFB8E56D9B6 /* XLAccountManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLAccountManager.h; path = XLAccountManager/Classes/XLAccountManager.h; sourceTree = "<group>"; };
+		85DCAEF7791B3029E3D85EFF045C0BC6 /* XLAccountManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLAccountManager.release.xcconfig; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		8956CAEB38B07BF5BF06B8AE9F6C84A8 /* close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "close@3x.png"; path = "XLAccountManager/Assets/close@3x.png"; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		8E9A56A7C4BC6D5622C463B67718DCFF /* add@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add@2x.png"; path = "XLAccountManager/Assets/add@2x.png"; sourceTree = "<group>"; };
+		90375597C68751C546C2F33E2D4062F2 /* add.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = add.png; path = XLAccountManager/Assets/add.png; sourceTree = "<group>"; };
+		90F03916DAB6430A9FF195E677203E27 /* password@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "password@3x.png"; path = "XLAccountManager/Assets/password@3x.png"; sourceTree = "<group>"; };
 		91845DDD63318665CF1B56C6DE13D6E1 /* Pods-XLAccountManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XLAccountManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
@@ -151,43 +158,42 @@
 		9D89A37989E5E5ACC2F628927A1CC7E1 /* Pods-XLAccountManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XLAccountManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DC5622CAC9F3326E7D722F9CDC79060 /* Pods-XLAccountManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XLAccountManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		AA6501137A18633E06BF28941755AD47 /* ResourceBundle-XLAccountManager-XLAccountManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLAccountManager-XLAccountManager-Info.plist"; sourceTree = "<group>"; };
+		AA73D2D11C99EEF64BA9DD8C8426068B /* XLAccountListCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLAccountListCell.h; path = XLAccountManager/Classes/XLAccountListCell.h; sourceTree = "<group>"; };
+		AC53C0D1C7688F38E79BE6CF3BFD9545 /* XLAccountListController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLAccountListController.h; path = XLAccountManager/Classes/XLAccountListController.h; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		B2AAB9B5B68008F74F010B1D06CCE3A6 /* XLAccountListController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLAccountListController.m; path = XLAccountManager/Classes/XLAccountListController.m; sourceTree = "<group>"; };
+		B1957597EAF8E22E2E9EA105BBBA1365 /* UIView+xllayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+xllayout.h"; path = "XLAccountManager/Classes/UIView+xllayout.h"; sourceTree = "<group>"; };
+		B4E06BF00B0BB65D988591F643190E42 /* XLAccountManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XLAccountManager.modulemap; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		B9FCD51807A47945E572485916C3A1F9 /* XLAccountManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLAccountManager-umbrella.h"; sourceTree = "<group>"; };
 		BA167C0440D339394BFD84D679B34D73 /* XLAccountManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLAccountManager; path = XLAccountManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE853AEB14A16516B730D6037734260F /* UIImage+XLAccountImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+XLAccountImage.m"; path = "XLAccountManager/Classes/UIImage+XLAccountImage.m"; sourceTree = "<group>"; };
-		C43F8A75FF82E116C378E8D0A8CD43C2 /* XLAccountManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLAccountManager-umbrella.h"; sourceTree = "<group>"; };
-		CA68EA8E522E34751A7CC3B5E6A55082 /* add@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add@3x.png"; path = "XLAccountManager/Assets/add@3x.png"; sourceTree = "<group>"; };
+		C0AF237131E68809EC8390D33F799549 /* account@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "account@3x.png"; path = "XLAccountManager/Assets/account@3x.png"; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		D07CF9BB59FF808E32A2FDA9DDAEFC2C /* XLAccountListController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLAccountListController.h; path = XLAccountManager/Classes/XLAccountListController.h; sourceTree = "<group>"; };
+		CCAF8467EACEBF9C5EB6CABFAFD031BD /* UIView+xllayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+xllayout.m"; path = "XLAccountManager/Classes/UIView+xllayout.m"; sourceTree = "<group>"; };
+		CFC043680786A986BC8859F259334130 /* XLAccountManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XLAccountManager-Info.plist"; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		D3D68F363395C113098D600A4BD805A5 /* UIImage+XLAccountImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+XLAccountImage.h"; path = "XLAccountManager/Classes/UIImage+XLAccountImage.h"; sourceTree = "<group>"; };
+		D3EF8377762E840920D2DC691591898D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		E4F3C7615465BC6BD159D0CA3B064132 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E67F2D930CC9D5C8A97E132C662D0FB7 /* XLAccountManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XLAccountManager.modulemap; sourceTree = "<group>"; };
-		EFC14E8E297CA2B44F8DD38CFE536CA7 /* XLArchiveObj.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLArchiveObj.m; path = XLAccountManager/Classes/XLArchiveObj.m; sourceTree = "<group>"; };
-		FA21D8B85F7A0C8FEA025D942EC4CDC0 /* account@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "account@2x.png"; path = "XLAccountManager/Assets/account@2x.png"; sourceTree = "<group>"; };
+		E78EFD4DB8A38CF545DD1811F8E1C277 /* XLAccountManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XLAccountManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA4953DDA48BF482EA22CFEF13E4C70A /* Pods-XLAccountManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XLAccountManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		FAC7FD184CE37DA32E959FCA38F19FC5 /* XLAccountManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLAccountManager-prefix.pch"; sourceTree = "<group>"; };
 		FC3CCD5FD492CCE59092F0ED2632FF91 /* Pods-XLAccountManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XLAccountManager_Tests.modulemap"; sourceTree = "<group>"; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		FF88653D17A65A3ADE2BBBD3326A11FF /* UIView+xllayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+xllayout.m"; path = "XLAccountManager/Classes/UIView+xllayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		093E86A91ED836BA0C818B67333AE446 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5182B475508C9F8AD52B65D179CCDCB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				07192337FF983832415917EB63209472 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B0D412D8BFFD9C5E165CB879D20465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,22 +227,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01C8AFAF10B1C1D5442B8D7867F441BB /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				4AA9880E72921597765EC0437E944908 /* account.png */,
-				FA21D8B85F7A0C8FEA025D942EC4CDC0 /* account@2x.png */,
-				79FCA2FFE9B4C3B89019F1300829558C /* account@3x.png */,
-				001A88F66543AA62CA186FD0A407E772 /* add.png */,
-				4C6EC94AD4EC8794DF6EEF55DDC58254 /* add@2x.png */,
-				CA68EA8E522E34751A7CC3B5E6A55082 /* add@3x.png */,
-				52D186F29E479D250DD375B86DD24269 /* password.png */,
-				110DF155DAA87D0CF136B8F9D4D6B608 /* password@2x.png */,
-				5A89706A49CD8B7549BA63F97FF3B1FE /* password@3x.png */,
-			);
-			name = Assets;
-			sourceTree = "<group>";
-		};
 		21507C172FDCA0F9088A9E8F0A63636F /* Pods-XLAccountManager_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,12 +244,12 @@
 			path = "Target Support Files/Pods-XLAccountManager_Tests";
 			sourceTree = "<group>";
 		};
-		33E2C101658EC2303CE17590BBAFDA93 /* Pod */ = {
+		24CA2D651FBB62384977AB726D366CAE /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				E4F3C7615465BC6BD159D0CA3B064132 /* LICENSE */,
-				821C748622720AB8EA06ED0FA6112C72 /* README.md */,
-				59FAB3542FCE179A0D0F6F90701A04AD /* XLAccountManager.podspec */,
+				D3EF8377762E840920D2DC691591898D /* LICENSE */,
+				5A47FF38DF3D4BBAA25C2371D8CABB6D /* README.md */,
+				E78EFD4DB8A38CF545DD1811F8E1C277 /* XLAccountManager.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -285,10 +275,32 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		4F307B32AAB33B3F01D1F436E1796D39 /* XLAccountManager */ = {
+			isa = PBXGroup;
+			children = (
+				69CA4D85184408F728D27E6F8568479B /* UIImage+XLAccountImage.h */,
+				2BD24E5EEA0359118212CB3B854F7941 /* UIImage+XLAccountImage.m */,
+				B1957597EAF8E22E2E9EA105BBBA1365 /* UIView+xllayout.h */,
+				CCAF8467EACEBF9C5EB6CABFAFD031BD /* UIView+xllayout.m */,
+				AA73D2D11C99EEF64BA9DD8C8426068B /* XLAccountListCell.h */,
+				5E6825513FE4F8C7DA74B00AFA395732 /* XLAccountListCell.m */,
+				AC53C0D1C7688F38E79BE6CF3BFD9545 /* XLAccountListController.h */,
+				7E80B10AA0FFCC06FC0B9BDE14657599 /* XLAccountListController.m */,
+				8585343AF49D1E0B033B2DFB8E56D9B6 /* XLAccountManager.h */,
+				48D6A93C22C829F517D4F47283BD364B /* XLArchiveObj.h */,
+				6D6FF4CA3A9EAC3B2B286C8FA6369755 /* XLArchiveObj.m */,
+				D81D6D3EF3BD4D82374C27DB2979830F /* Assets */,
+				24CA2D651FBB62384977AB726D366CAE /* Pod */,
+				643E36FAE7253719437D12CB981437F2 /* Support Files */,
+			);
+			name = XLAccountManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		509E7A6BE0EFBFABCFDD282AC86F0D7A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B009D2B3BF90B57511020C93ACBBE2A2 /* XLAccountManager */,
+				4F307B32AAB33B3F01D1F436E1796D39 /* XLAccountManager */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -310,6 +322,22 @@
 			path = "Target Support Files/Pods-XLAccountManager_Example";
 			sourceTree = "<group>";
 		};
+		643E36FAE7253719437D12CB981437F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA6501137A18633E06BF28941755AD47 /* ResourceBundle-XLAccountManager-XLAccountManager-Info.plist */,
+				B4E06BF00B0BB65D988591F643190E42 /* XLAccountManager.modulemap */,
+				7DC9A81B73B39A1209F72BC7BD18525F /* XLAccountManager-dummy.m */,
+				CFC043680786A986BC8859F259334130 /* XLAccountManager-Info.plist */,
+				189BA905183613DE0BA98FC63A3902DF /* XLAccountManager-prefix.pch */,
+				B9FCD51807A47945E572485916C3A1F9 /* XLAccountManager-umbrella.h */,
+				84BF0F5A170B3F73BBF7879CD1B12A5C /* XLAccountManager.debug.xcconfig */,
+				85DCAEF7791B3029E3D85EFF045C0BC6 /* XLAccountManager.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XLAccountManager";
+			sourceTree = "<group>";
+		};
 		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,28 +356,6 @@
 				98045C872CC0AD5FC44B2FE8549537A6 /* XLAccountManager-XLAccountManager */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B009D2B3BF90B57511020C93ACBBE2A2 /* XLAccountManager */ = {
-			isa = PBXGroup;
-			children = (
-				D3D68F363395C113098D600A4BD805A5 /* UIImage+XLAccountImage.h */,
-				BE853AEB14A16516B730D6037734260F /* UIImage+XLAccountImage.m */,
-				4B8846186438A3CB38588B07AD51B9D9 /* UIView+xllayout.h */,
-				FF88653D17A65A3ADE2BBBD3326A11FF /* UIView+xllayout.m */,
-				22D607A05B0F8BCF226DC60CB04F2E6C /* XLAccountListCell.h */,
-				309D1F8625601346887535EE970E616A /* XLAccountListCell.m */,
-				D07CF9BB59FF808E32A2FDA9DDAEFC2C /* XLAccountListController.h */,
-				B2AAB9B5B68008F74F010B1D06CCE3A6 /* XLAccountListController.m */,
-				3A176A19BB0BC6EF75C67C2244D336A3 /* XLAccountManager.h */,
-				1CBA530B65741C13C4C122F04EE8063B /* XLArchiveObj.h */,
-				EFC14E8E297CA2B44F8DD38CFE536CA7 /* XLArchiveObj.m */,
-				01C8AFAF10B1C1D5442B8D7867F441BB /* Assets */,
-				33E2C101658EC2303CE17590BBAFDA93 /* Pod */,
-				CB265614ADF1B25F9CF5862E2732468B /* Support Files */,
-			);
-			name = XLAccountManager;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
@@ -386,22 +392,6 @@
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		CB265614ADF1B25F9CF5862E2732468B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				78FA3B6ADF36C288BC9B23253D237BF3 /* ResourceBundle-XLAccountManager-XLAccountManager-Info.plist */,
-				E67F2D930CC9D5C8A97E132C662D0FB7 /* XLAccountManager.modulemap */,
-				792DDA98039FED822C59B178EEB4F85A /* XLAccountManager-dummy.m */,
-				75B75DCC4372562658DB0A7EF76D4581 /* XLAccountManager-Info.plist */,
-				FAC7FD184CE37DA32E959FCA38F19FC5 /* XLAccountManager-prefix.pch */,
-				C43F8A75FF82E116C378E8D0A8CD43C2 /* XLAccountManager-umbrella.h */,
-				5E5C7E51682CF138DA39E425E9129AFB /* XLAccountManager.debug.xcconfig */,
-				1D74755356A85FD286B7CB1474B77836 /* XLAccountManager.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XLAccountManager";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +411,25 @@
 				21507C172FDCA0F9088A9E8F0A63636F /* Pods-XLAccountManager_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D81D6D3EF3BD4D82374C27DB2979830F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				829B29F4AABDBDA72676E22518BD0A40 /* account.png */,
+				585018C664626BD4DB01186AB55B1223 /* account@2x.png */,
+				C0AF237131E68809EC8390D33F799549 /* account@3x.png */,
+				90375597C68751C546C2F33E2D4062F2 /* add.png */,
+				8E9A56A7C4BC6D5622C463B67718DCFF /* add@2x.png */,
+				20C7F3835702DD59E42C810E1EE89703 /* add@3x.png */,
+				51834EC5092EB435950347D2439B6E12 /* close.png */,
+				15A0AF5D52EE881C465F4C8DFA166FD2 /* close@2x.png */,
+				8956CAEB38B07BF5BF06B8AE9F6C84A8 /* close@3x.png */,
+				7C0D7390410E2B0549383A83793BD775 /* password.png */,
+				3F652C34771EB5C463149A6227EE9FEF /* password@2x.png */,
+				90F03916DAB6430A9FF195E677203E27 /* password@3x.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
@@ -495,11 +504,11 @@
 /* Begin PBXNativeTarget section */
 		49A061205DC70CCD496959D49B145F61 /* XLAccountManager-XLAccountManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00A1780EDFCFC7AFC55772F0B579407C /* Build configuration list for PBXNativeTarget "XLAccountManager-XLAccountManager" */;
+			buildConfigurationList = BEC84CBC0CDB0B8E4A142A644BE92199 /* Build configuration list for PBXNativeTarget "XLAccountManager-XLAccountManager" */;
 			buildPhases = (
-				88304FBCC4B662703F9A6E30CE918680 /* Sources */,
-				093E86A91ED836BA0C818B67333AE446 /* Frameworks */,
-				A51D6BE8CB7161D07840C9FCBD152C7A /* Resources */,
+				2B1812BC298C8C3E0C36920DA71034D3 /* Sources */,
+				A2B0D412D8BFFD9C5E165CB879D20465 /* Frameworks */,
+				65F9CC74FC71480B875AE9EEAD44D146 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -522,7 +531,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				01F4D251747F52BCEEB48BC38A368082 /* PBXTargetDependency */,
+				15864A7A2C972F7D5E62971ED313F6FA /* PBXTargetDependency */,
 			);
 			name = "Pods-XLAccountManager_Example";
 			productName = Pods_XLAccountManager_Example;
@@ -559,8 +568,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				B250A1BD87BD1240CED86394B1B3B076 /* PBXTargetDependency */,
-				D0C226477A8D8E9B3D220270985FC8B8 /* PBXTargetDependency */,
+				3DAE68A08294EB4E4DA735EBC2C3331A /* PBXTargetDependency */,
+				0B79F6C7890EDC4DA4ABF9A61E13A1B7 /* PBXTargetDependency */,
 			);
 			name = "Pods-XLAccountManager_Tests";
 			productName = Pods_XLAccountManager_Tests;
@@ -579,7 +588,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				326C0E74C18EDBC9B1A843589A02D7C7 /* PBXTargetDependency */,
+				A3A1C108BE48486A52B456B25759916D /* PBXTargetDependency */,
 			);
 			name = XLAccountManager;
 			productName = XLAccountManager;
@@ -640,19 +649,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A51D6BE8CB7161D07840C9FCBD152C7A /* Resources */ = {
+		65F9CC74FC71480B875AE9EEAD44D146 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8143FAAD442DC4DB3E195947CA7C70AF /* account.png in Resources */,
-				F2350C4112D8346656527E4A2F709AC8 /* account@2x.png in Resources */,
-				D4F53CB3123E774458796DABA9B0A85A /* account@3x.png in Resources */,
-				5BA48BA4B303DE65C0E722F3D2A7ED79 /* add.png in Resources */,
-				CB66B154C5A45E1143F87E5974CEEFD0 /* add@2x.png in Resources */,
-				70052BF77C89F87FF4570A3690C11356 /* add@3x.png in Resources */,
-				DD528CC49340471EF42AD3DEDF7BD9C7 /* password.png in Resources */,
-				7858D80A430E9D91FEF6E8A2F9C939EA /* password@2x.png in Resources */,
-				A6CFB717AA235BD140E119045DF50BC8 /* password@3x.png in Resources */,
+				B6954C2FC5A87509479FDDFCCAA7C363 /* account.png in Resources */,
+				B1A01139409888DAE8D987D534255DDF /* account@2x.png in Resources */,
+				7F578B578EFD3E35BE6EBE0161D9B8C7 /* account@3x.png in Resources */,
+				B58FF4A7568F23D9F368455A506F4213 /* add.png in Resources */,
+				167F18C1F6CAD4E802DFCCDD2F7D1B26 /* add@2x.png in Resources */,
+				27CB313CE71DC63650AC327F9CCE8734 /* add@3x.png in Resources */,
+				0574E41FF5C769FA43C08552240ED875 /* close.png in Resources */,
+				FE6D5280FFA4BB1FCC2078B503063C6F /* close@2x.png in Resources */,
+				B0B1C2B161998B5827DB4522573E7488 /* close@3x.png in Resources */,
+				E0DA8EB8EA9D92C3FA5D45507D820D0B /* password.png in Resources */,
+				83A2AC3A204C820D473221BB2B1DB8D0 /* password@2x.png in Resources */,
+				62E6CAD14C04EB579028D2F5112ECB92 /* password@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +678,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2B1812BC298C8C3E0C36920DA71034D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41CDCD839BFBB227289C982D73FF2595 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -695,13 +714,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88304FBCC4B662703F9A6E30CE918680 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EE210BFC37CDBA0645C09C3819F41723 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -721,29 +733,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		01F4D251747F52BCEEB48BC38A368082 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = XLAccountManager;
-			target = C471617A5D9DC0E257A2F2863697C88D /* XLAccountManager */;
-			targetProxy = EAB7CC01F7897DB882F36B44C9A11750 /* PBXContainerItemProxy */;
-		};
-		326C0E74C18EDBC9B1A843589A02D7C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "XLAccountManager-XLAccountManager";
-			target = 49A061205DC70CCD496959D49B145F61 /* XLAccountManager-XLAccountManager */;
-			targetProxy = 5861FC7E2DB6EB71FFB868C06CD56C8B /* PBXContainerItemProxy */;
-		};
-		B250A1BD87BD1240CED86394B1B3B076 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = C57607151D97B80E1BA4F3AC4D5DA969 /* PBXContainerItemProxy */;
-		};
-		D0C226477A8D8E9B3D220270985FC8B8 /* PBXTargetDependency */ = {
+		0B79F6C7890EDC4DA4ABF9A61E13A1B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-XLAccountManager_Example";
 			target = 7DE88BE25F919A217EA51B69776D2E63 /* Pods-XLAccountManager_Example */;
-			targetProxy = 9F2C6B55C2BF03EDF1889540BFD6DCAE /* PBXContainerItemProxy */;
+			targetProxy = CBD86247E230C063A2DE86322A385C2F /* PBXContainerItemProxy */;
+		};
+		15864A7A2C972F7D5E62971ED313F6FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XLAccountManager;
+			target = C471617A5D9DC0E257A2F2863697C88D /* XLAccountManager */;
+			targetProxy = 8D24FCB527046825DF9100A60BF75D5F /* PBXContainerItemProxy */;
+		};
+		3DAE68A08294EB4E4DA735EBC2C3331A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 81915554BD4B8EFEB9CC877D8A1F4E92 /* PBXContainerItemProxy */;
+		};
+		A3A1C108BE48486A52B456B25759916D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XLAccountManager-XLAccountManager";
+			target = 49A061205DC70CCD496959D49B145F61 /* XLAccountManager-XLAccountManager */;
+			targetProxy = 17C7ED2BAB35D3272D5401A16543A4A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -847,7 +859,7 @@
 		};
 		391F7C607A35D913BAA0A2D95F1B209F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D74755356A85FD286B7CB1474B77836 /* XLAccountManager.release.xcconfig */;
+			baseConfigurationReference = 85DCAEF7791B3029E3D85EFF045C0BC6 /* XLAccountManager.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -873,6 +885,22 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39F27C75C1F2500C38F0E16FBE5687C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85DCAEF7791B3029E3D85EFF045C0BC6 /* XLAccountManager.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLAccountManager";
+				IBSC_MODULE = XLAccountManager;
+				INFOPLIST_FILE = "Target Support Files/XLAccountManager/ResourceBundle-XLAccountManager-XLAccountManager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = XLAccountManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -905,6 +933,22 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67C65EDBB8D1CCA8CC8D5CFF0BCA62BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84BF0F5A170B3F73BBF7879CD1B12A5C /* XLAccountManager.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLAccountManager";
+				IBSC_MODULE = XLAccountManager;
+				INFOPLIST_FILE = "Target Support Files/XLAccountManager/ResourceBundle-XLAccountManager-XLAccountManager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = XLAccountManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -973,7 +1017,7 @@
 		};
 		8ED4FD336B2E760AC62846E799941BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E5C7E51682CF138DA39E425E9129AFB /* XLAccountManager.debug.xcconfig */;
+			baseConfigurationReference = 84BF0F5A170B3F73BBF7879CD1B12A5C /* XLAccountManager.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1000,22 +1044,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		8F5AD5B7C018DED52C250D7AC7479912 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D74755356A85FD286B7CB1474B77836 /* XLAccountManager.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLAccountManager";
-				IBSC_MODULE = XLAccountManager;
-				INFOPLIST_FILE = "Target Support Files/XLAccountManager/ResourceBundle-XLAccountManager-XLAccountManager-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = XLAccountManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1144,34 +1172,9 @@
 			};
 			name = Debug;
 		};
-		FE4081C046D8BEA539BFB16D62025317 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E5C7E51682CF138DA39E425E9129AFB /* XLAccountManager.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLAccountManager";
-				IBSC_MODULE = XLAccountManager;
-				INFOPLIST_FILE = "Target Support Files/XLAccountManager/ResourceBundle-XLAccountManager-XLAccountManager-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = XLAccountManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00A1780EDFCFC7AFC55772F0B579407C /* Build configuration list for PBXNativeTarget "XLAccountManager-XLAccountManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FE4081C046D8BEA539BFB16D62025317 /* Debug */,
-				8F5AD5B7C018DED52C250D7AC7479912 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1204,6 +1207,15 @@
 			buildConfigurations = (
 				50E6B36AD0BF208AC49C1A68DC047719 /* Debug */,
 				6A475A086E37511C45531CAF93062262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC84CBC0CDB0B8E4A142A644BE92199 /* Build configuration list for PBXNativeTarget "XLAccountManager-XLAccountManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C65EDBB8D1CCA8CC8D5CFF0BCA62BB /* Debug */,
+				39F27C75C1F2500C38F0E16FBE5687C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -4,9 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - XLAccountManager (0.2.0):
-    - XLAccountManager/Assets (= 0.2.0)
-  - XLAccountManager/Assets (0.2.0)
+  - XLAccountManager (0.3.0):
+    - XLAccountManager/Assets (= 0.3.0)
+  - XLAccountManager/Assets (0.3.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  XLAccountManager: f770dcd73c64b1d33a38e6e7d52fe8bdb9978696
+  XLAccountManager: b655824d37d120f1c22b94180185af66bb087aed
 
 PODFILE CHECKSUM: 90516e0a5a58ddd1938137d5f6e0367cb0a2bb1d
 

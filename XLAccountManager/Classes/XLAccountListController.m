@@ -59,6 +59,10 @@
     [self initViews];
 }
 
+- (void)close {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)addAccount {
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Account Information" message:@"" preferredStyle:UIAlertControllerStyleAlert];
@@ -129,18 +133,24 @@
         titleLabel.bottomAnchor.equalTo(bgView.bottomAnchor).offset(0),
     ]];
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [btn setTitle:@"Add" forState:UIControlStateNormal];
-//    btn.titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
-//    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-//    [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-    [btn setImage:[UIImage am_imageNamed:@"add"] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(addAccount) forControlEvents:UIControlEventTouchUpInside];
-    [bgView addSubview:btn];
-    [btn sizeToFit];
-    [btn activateConstraints:@[
-        btn.centerYAnchor.equalTo(titleLabel.centerYAnchor),
-        btn.rightAnchor.equalTo(bgView.rightAnchor).offset(-10),
+    UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [addBtn setImage:[UIImage am_imageNamed:@"add"] forState:UIControlStateNormal];
+    [addBtn addTarget:self action:@selector(addAccount) forControlEvents:UIControlEventTouchUpInside];
+    [bgView addSubview:addBtn];
+    [addBtn sizeToFit];
+    [addBtn activateConstraints:@[
+        addBtn.centerYAnchor.equalTo(titleLabel.centerYAnchor),
+        addBtn.rightAnchor.equalTo(bgView.rightAnchor).offset(-10),
+    ]];
+    
+    UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [closeBtn setImage:[UIImage am_imageNamed:@"close"] forState:UIControlStateNormal];
+    [closeBtn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
+    [bgView addSubview:closeBtn];
+    [closeBtn sizeToFit];
+    [closeBtn activateConstraints:@[
+        closeBtn.centerYAnchor.equalTo(titleLabel.centerYAnchor),
+        closeBtn.leftAnchor.equalTo(bgView.leftAnchor).offset(10),
     ]];
     
     UITableView *table = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
