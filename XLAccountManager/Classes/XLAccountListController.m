@@ -271,7 +271,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.dataArray removeObjectAtIndex:indexPath.row];
+        [self.dataArray removeObjectAtIndex:indexPath.section];
         [tableView reloadData];
         [self saveDataToLocal];
     }
