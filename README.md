@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/XLAccountManager.svg?style=flat)](https://cocoapods.org/pods/XLAccountManager)
 [![Platform](https://img.shields.io/cocoapods/p/XLAccountManager.svg?style=flat)](https://cocoapods.org/pods/XLAccountManager)
 
-## Example
+## 用于快速管理登录账号，主要针对没有记住账号的app来测试。
 
 ![img](./imgs/img.png)
 
