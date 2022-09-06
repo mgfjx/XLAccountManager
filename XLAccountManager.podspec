@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XLAccountManager'
-  s.version          = '0.6.0'
+  s.version          = '0.7.0'
   s.summary          = '用于测试app时的账号管理.'
 
 # This description is used to generate tags and improve search results.

@@ -153,7 +153,7 @@
         obj.password = password;
     } else {
         AccountObj *obj = [AccountObj account:account password:password desc:desc];
-        [self.dataArray addObject:obj];
+        [self.dataArray insertObject:obj atIndex:0];
     }
     [self.tableView reloadData];
     [self saveDataToLocal];
